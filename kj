@@ -1,0 +1,20 @@
+// this is for userBase.js
+
+
+const User = require('./user');
+
+const UserBase = require('./userbase');
+
+const users = [
+  new User('Uma'),
+  new User('Josh'),
+  new User('Ollie')
+];
+
+const userBase = new UserBase(users);
+
+userBase.count();
+
+userBase.getNames();
+
+userBase.getIntroductions();
